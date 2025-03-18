@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: FireFlyLab MQTT Broker
+    env: node
+    buildCommand: bun install
+    startCommand: bun run start
+    envVars:
+      - key: NODE_ENV
+        value: production
